@@ -15,7 +15,7 @@ gulp.task('commit', function () {
         .pipe(git.commit('initial commit'));
 });
 gulp.task('addremote', function () {
-    git.addRemote('origin', 'https://github.com/304223751/gulp-git.git', function (err) {
+    git.addRemote('origin', 'git@github.com:304223751/gulp-git.git', function (err) {
         if (err) throw err;
     });
 });
